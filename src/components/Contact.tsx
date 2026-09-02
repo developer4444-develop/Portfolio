@@ -49,7 +49,7 @@ const Contact = () => {
         section.querySelector('.contact-header'),
         { opacity: 0, y: 40 },
         {
-          opacity: 1, y: 0, duration: 0.8, ease: 'power3.out',
+          opacity: 1, y: 0, duration: 0.4, ease: 'power3.out',
           scrollTrigger: { trigger: section, start: 'top 75%' },
         }
       );
@@ -58,7 +58,7 @@ const Contact = () => {
         section.querySelectorAll('.contact-col'),
         { opacity: 0, y: 30 },
         {
-          opacity: 1, y: 0, duration: 0.7, stagger: 0.2, ease: 'power3.out',
+          opacity: 1, y: 0, duration: 0.35, stagger: 0.2, ease: 'power3.out',
           scrollTrigger: { trigger: section.querySelector('.contact-grid'), start: 'top 80%' },
         }
       );
@@ -100,7 +100,7 @@ const Contact = () => {
                 animateBy="letters"
                 direction="top"
                 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter text-white mb-0 text-left leading-none"
-                stepDuration={0.2}
+                stepDuration={0.05}
               />
             </div>
             <div className="hidden md:block max-w-[280px] text-left md:text-right text-white/40 text-[10px] md:text-xs font-mono uppercase tracking-widest leading-relaxed mb-2">

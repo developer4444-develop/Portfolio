@@ -5,11 +5,32 @@ import { ArrowUpRight } from '@phosphor-icons/react';
 
 const projects = [
   {
-    title: 'Rental Platform',
-    company: 'NeoCarz',
-    description: 'Spearheaded the backend development for NeoCarz. Created scalable APIs for bookings, vehicle tracking, and user management. Implemented real-time updates via WebSockets and optimized PostgreSQL queries for high performance.',
-    tags: ['Django', 'REST API', 'WebSocket', 'PostgreSQL', 'NeoCarz Backend'],
-    link: 'https://neocarz.com/',
+    title: 'NesAnalytics – Data Analytics Platform',
+    company: 'Nesa Software',
+    description: 'Developed backend APIs and frontend features for processing and working with large datasets. Implemented functionality for a drag-and-drop data-processing workflow for data analysts.',
+    tags: ['Python', 'FastAPI', 'React', 'Next.js'],
+    link: '#',
+  },
+  {
+    title: 'Car Rental Platform',
+    company: 'Brandstrek Coders',
+    description: 'Developed APIs for user management, vehicle listings, bookings, and availability. Implemented WebSocket-based real-time booking and availability updates.',
+    tags: ['Django', 'REST API', 'WebSocket', 'PostgreSQL'],
+    link: '#',
+  },
+  {
+    title: 'AVG Motors – B2B ERP System',
+    company: 'Nesa Software',
+    description: 'Developed REST APIs and business logic for employee incentive calculation across multiple branches and designations. Designed database models and integrated ERP functionality with the React/Next.js frontend.',
+    tags: ['Python', 'Django', 'REST API', 'React', 'Next.js', 'MySQL'],
+    link: '#',
+  },
+  {
+    title: 'B2B ERP – Enquiry, Booking & Retail',
+    company: 'Nesa Software',
+    description: 'Developed ERP workflows covering customer enquiry, booking, and retail operations. Built REST APIs and integrated backend services with the React/Next.js frontend.',
+    tags: ['Python', 'Django', 'REST API', 'React', 'Next.js', 'MySQL'],
+    link: '#',
   },
   {
     title: 'Cloud Kitchen Platform',
@@ -38,14 +59,7 @@ const projects = [
     description: 'Built a multi-store SaaS platform integrating Shopify and WooCommerce APIs to sync products and inventory. Implemented webhooks for real-time data sync.',
     tags: ['Django', 'Shopify API', 'WooCommerce API', 'Webhooks'],
     link: '#',
-  },
-  {
-    title: 'E-Commerce Admin Dashboard',
-    company: 'BrandStrek Coders',
-    description: 'Professional admin dashboard system with customized UI template for managing products, orders, and users. Integrated Django views and models for a fully functional panel.',
-    tags: ['Django', 'Bootstrap', 'PostgreSQL', 'UI/UX'],
-    link: '#',
-  },
+  }
 ];
 
 const Projects = () => {
@@ -64,7 +78,7 @@ const Projects = () => {
         section.querySelector('.projects-header'),
         { opacity: 0, y: 40 },
         {
-          opacity: 1, y: 0, duration: 0.8, ease: 'power3.out',
+          opacity: 1, y: 0, duration: 0.4, ease: 'power3.out',
           scrollTrigger: { trigger: section, start: 'top 75%' },
         }
       );
@@ -73,7 +87,7 @@ const Projects = () => {
         section.querySelectorAll('.project-item'),
         { opacity: 0, y: 30 },
         {
-          opacity: 1, y: 0, duration: 0.7,
+          opacity: 1, y: 0, duration: 0.35,
           stagger: 0.1, ease: 'power3.out',
           scrollTrigger: { trigger: section.querySelector('.projects-list'), start: 'top 85%' },
         }
@@ -116,7 +130,7 @@ const Projects = () => {
                 animateBy="letters"
                 direction="top"
                 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter text-white mb-0 text-left leading-none"
-                stepDuration={0.2}
+                stepDuration={0.05}
               />
             </div>
             <div className="hidden md:block max-w-[280px] text-left md:text-right text-white/40 text-[10px] md:text-xs font-mono uppercase tracking-widest leading-relaxed mb-2">
@@ -147,7 +161,7 @@ const Projects = () => {
                 {/* Title & Company (4 Cols) */}
                 <div className="md:col-span-4 flex flex-col gap-2">
                   <span className="text-[10px] md:text-xs font-mono text-white/30 uppercase tracking-[0.2em]">{project.company}</span>
-                  <h3 className="text-3xl md:text-4xl lg:text-5xl font-black text-white/80 group-hover:text-white group-hover:translate-x-2 transition-all duration-500 tracking-tighter">
+                  <h3 className="text-3xl md:text-4xl lg:text-5xl font-black text-white/80 group-hover:text-white group-hover:translate-x-2 transition-all duration-500">
                     {project.title.toUpperCase()}
                   </h3>
                   <div className="flex md:hidden items-center gap-3 mt-1">
