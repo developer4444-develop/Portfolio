@@ -5,32 +5,32 @@ import BlurText from './BlurText';
 const experiences = [
   {
     role: 'Python Full Stack Developer',
-    company: 'Nesa Softwares',
-    period: 'May 2026 — Present',
+    company: 'NesaSoftware , KochiKerala',
+    period: 'May 2026 - Present',
     description: [
-      'Working as a Python Full Stack Developer based in Kochi, Ernakulam.',
-      'Building robust web applications using Python, Django, and modern frontend technologies.',
-      'Collaborating with the team to deliver high-quality software solutions.'
+      'Develop full-stack applications and REST APIs using Python, Django, FastAPI, React, and Next.js.',
+      'Develop B2B ERP solutions for employee incentive calculation, enquiry, booking, and retail management.',
+      'Contribute to NesAnalytics, a data analytics platform for processing large datasets through a drag-and-drop interface.'
     ]
   },
   {
-    role: 'Python Developer',
-    company: 'BrandStrek Coders',
-    period: 'Aug 2025 — Apr 2026',
+    role: 'Junior Python Developer',
+    company: 'BrandStrek Coders,Kozhikode',
+    period: 'Aug 2025 - May 2026',
     description: [
-      'Developing and maintaining production-ready backend modules using Django and DRF.',
-      'Building and optimizing APIs for core business modules.',
-      'Collaborating with product and frontend teams to deliver scalable solutions.'
+      'Developed REST APIs and backend services using Python, Django, and Django REST Framework.',
+      'Integrated Shopify, WooCommerce, and Razorpay APIs for e-commerce, payments, and data synchronization.',
+      'Developed booking and real-time availability features using Django, WebSockets, and PostgreSQL.'
     ]
   },
   {
     role: 'Automation / Backend Developer',
-    company: 'BrandStrek Coders',
-    period: 'Feb 2025 — Apr 2026',
+    company: 'BrandStrek Future,Kozhikode',
+    period: 'Feb 2026 - Apr 2026',
     description: [
-      'Leading a team focused on AI automation solutions and no-code website development.',
-      'Implementing automation systems using n8n and other AI-powered tools.',
-      'Handling client requirements and managing project timelines.'
+      'Developed backend automation solutions using Python and n8n for business workflows',
+      'Built reusable backend services and APIs based on client requirements.',
+      'Collaborated with the team on development, testing, and deployment of backend solutions.'
     ]
   },
   {
@@ -61,7 +61,7 @@ const Experience = () => {
         section.querySelector('.experience-header'),
         { opacity: 0, y: 40 },
         {
-          opacity: 1, y: 0, duration: 0.8, ease: 'power3.out',
+          opacity: 1, y: 0, duration: 0.4, ease: 'power3.out',
           scrollTrigger: { trigger: section, start: 'top 75%' },
         }
       );
@@ -70,7 +70,7 @@ const Experience = () => {
         section.querySelectorAll('.experience-item'),
         { opacity: 0, x: -30 },
         {
-          opacity: 1, x: 0, duration: 0.7,
+          opacity: 1, x: 0, duration: 0.35,
           stagger: 0.15, ease: 'power3.out',
           scrollTrigger: { trigger: section.querySelector('.experience-list'), start: 'top 80%' },
         }
@@ -81,7 +81,7 @@ const Experience = () => {
   }, []);
 
   return (
-    <section id="experience" ref={sectionRef} className="pt-32 pb-24 md:pt-48 md:pb-32 relative bg-black overflow-hidden">
+    <section id="experience" ref={sectionRef} className="pt-16 pb-24 md:pt-24 md:pb-32 relative bg-black overflow-hidden">
       {/* RippleGrid background */}
       <div className="absolute inset-0 z-[0]">
         <RippleGrid
@@ -113,7 +113,7 @@ const Experience = () => {
                 animateBy="letters"
                 direction="top"
                 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter text-white mb-0 text-left leading-none"
-                stepDuration={0.2}
+                stepDuration={0.05}
               />
             </div>
             <div className="hidden md:block max-w-[280px] text-left md:text-right text-white/40 text-[10px] md:text-xs font-mono uppercase tracking-widest leading-relaxed mb-2">
@@ -142,7 +142,7 @@ const Experience = () => {
 
                 {/* Role & Details (9 Cols) */}
                 <div className="md:col-span-9 space-y-6">
-                  <h3 className="text-3xl md:text-4xl lg:text-5xl font-black text-white/80 group-hover:text-white transition-all duration-500 tracking-tighter">
+                  <h3 className="text-3xl md:text-4xl lg:text-5xl font-black text-white/80 group-hover:text-white transition-all duration-500">
                     {exp.role.toUpperCase()}
                   </h3>
                   <ul className="space-y-4 max-w-3xl">

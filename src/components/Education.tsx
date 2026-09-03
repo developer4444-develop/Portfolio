@@ -4,10 +4,10 @@ import BlurText from './BlurText';
 
 const education = [
   {
-    degree: 'B.Tech in AI & Data Science',
-    institution: 'Dhanalakshmi Srinivasan College',
-    year: 'Graduation: 2025',
-    details: 'Specialized in Artificial Intelligence, Machine Learning, and Big Data Analytics. Built a solid foundation in backend architecture and various data processing frameworks.'
+    degree: 'Bachelor of Technology in Artificial intelligence and data science',
+    institution: 'Dhanalakshmi Srinivasan college of engineering Coimbatore',
+    year: 'Aug 2021 - Jul 2025',
+    details: 'CGPA: 8.1. Specialized in Artificial Intelligence, Machine Learning, and Big Data Analytics. Built a solid foundation in backend architecture and various data processing frameworks.'
   },
   {
     degree: 'Full Stack Development Certification',
@@ -33,7 +33,7 @@ const Education = () => {
         section.querySelector('.education-header'),
         { opacity: 0, scale: 0.95 },
         {
-          opacity: 1, scale: 1, duration: 1, ease: 'power3.out',
+          opacity: 1, scale: 1, duration: 0.5, ease: 'power3.out',
           scrollTrigger: { trigger: section, start: 'top 75%' },
         }
       );
@@ -42,7 +42,7 @@ const Education = () => {
         section.querySelectorAll('.education-card'),
         { opacity: 0, y: 40 },
         {
-          opacity: 1, y: 0, duration: 0.8, stagger: 0.2, ease: 'power3.out',
+          opacity: 1, y: 0, duration: 0.4, stagger: 0.2, ease: 'power3.out',
           scrollTrigger: { trigger: section.querySelector('.education-grid'), start: 'top 80%' },
         }
       );
@@ -70,7 +70,7 @@ const Education = () => {
             animateBy="letters"
             direction="top"
             className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter text-white mb-6 justify-center"
-            stepDuration={0.2}
+            stepDuration={0.05}
           />
           <div className="w-12 h-px bg-white/20 mx-auto" />
         </div>
@@ -87,7 +87,7 @@ const Education = () => {
                   <span className="text-[10px] font-mono text-white/30 uppercase tracking-[0.2em]">{item.year}</span>
                 </div>
                 <div className="space-y-2">
-                  <h3 className="text-2xl md:text-3xl font-bold text-white group-hover:text-white transition-colors tracking-tight">
+                  <h3 className="text-2xl md:text-3xl font-bold text-white group-hover:text-white transition-colors">
                     {item.degree}
                   </h3>
                   <p className="text-lg text-white/50 font-medium">

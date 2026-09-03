@@ -93,33 +93,31 @@ const Hero = () => {
         {/* Main title with BlurText animation */}
         <div
           ref={headlineRef}
-          className="mb-12 md:mb-16 opacity-0"
+          className="mb-12 md:mb-16 opacity-0 flex flex-col items-center justify-center gap-2 sm:gap-4"
         >
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 mb-2">
-            <BlurText
-              text="PYTHON"
-              delay={100}
-              animateBy="letters"
-              direction="top"
-              className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tighter leading-none text-white justify-center"
-              stepDuration={0.2}
-            />
-            <BlurText
-              text="FULL STACK"
-              delay={100}
-              animateBy="letters"
-              direction="top"
-              className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tighter leading-none text-white justify-center"
-              stepDuration={0.2}
-            />
-          </div>
+          <BlurText
+            text="PYTHON"
+            delay={100}
+            animateBy="letters"
+            direction="top"
+            className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tighter leading-none text-white justify-center"
+            stepDuration={0.05}
+          />
+          <BlurText
+            text="FULL STACK"
+            delay={100}
+            animateBy="letters"
+            direction="top"
+            className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tighter leading-none text-white justify-center"
+            stepDuration={0.05}
+          />
           <BlurText
             text="DEVELOPER"
             delay={100}
             animateBy="letters"
             direction="top"
             className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tighter leading-none text-white justify-center block"
-            stepDuration={0.2}
+            stepDuration={0.05}
           />
         </div>
 
@@ -138,23 +136,6 @@ const Hero = () => {
           >
             <span className="block" style={{ animation: 'spin 20s linear infinite reverse' }}>
               View Works
-            </span>
-          </a>
-
-          {/* View Resume CTA */}
-          <a
-            ref={resumeRef}
-            href="https://drive.google.com/file/d/1Dd2GjOJ3JXnOgCGSt2hmZMP5V_2jrrpX/view?usp=sharing"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center w-24 h-24 md:w-32 md:h-32 rounded-full border-2 border-white/30 text-white font-medium text-[10px] md:text-xs uppercase tracking-widest opacity-0 cursor-pointer transition-all duration-500 hover:border-white hover:bg-white/10 hover:scale-110 cursor-target"
-            style={{ 
-              borderStyle: 'dashed',
-              animation: 'spin 20s linear infinite'
-            }}
-          >
-            <span className="block" style={{ animation: 'spin 20s linear infinite reverse' }}>
-              View Resume
             </span>
           </a>
         </div>
