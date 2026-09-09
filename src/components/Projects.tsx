@@ -9,14 +9,14 @@ const projects = [
     company: 'Nesa Software',
     description: 'Developed backend APIs and frontend features for processing and working with large datasets. Implemented functionality for a drag-and-drop data-processing workflow for data analysts.',
     tags: ['Python', 'FastAPI', 'React', 'Next.js'],
-    link: '#',
+    link: 'https://nesanalytics.nesasoftware.com/',
   },
   {
     title: 'Car Rental Platform',
     company: 'Brandstrek Coders',
     description: 'Developed APIs for user management, vehicle listings, bookings, and availability. Implemented WebSocket-based real-time booking and availability updates.',
     tags: ['Django', 'REST API', 'WebSocket', 'PostgreSQL'],
-    link: '#',
+    link: 'https://neocarz.com/en',
   },
   {
     title: 'AVG Motors – B2B ERP System',
